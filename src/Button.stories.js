@@ -1,8 +1,9 @@
-import React from 'react';
-import styled from 'styled-components';
-import { Button } from './Button';
-import { Icon } from './Icon';
-import { StoryLinkWrapper } from './StoryLinkWrapper';
+import React from "react";
+import styled from "styled-components";
+import { Button } from "./Button";
+import { Icon } from "./Icon";
+import { StoryLinkWrapper } from "./StoryLinkWrapper";
+import { action } from "@storybook/addon-actions";
 
 const CustomButton = styled.button`
   border: 1px solid green;
@@ -17,15 +18,21 @@ function ButtonWrapper(props) {
 }
 
 export default {
-  title: 'Design System/Button',
+  title: "Design System/Button",
   component: Button,
 };
 
-export const AllButtons = (args) => (
+const Template = (args) => (
   <div>
-    <Button appearance="primary">Primary</Button>
-    <Button appearance="secondary">Secondary</Button>
-    <Button appearance="tertiary">Tertiary</Button>
+    <Button {...args} appearance="primary">
+      Primary
+    </Button>
+    <Button {...args} appearance="secondary">
+      Secondary
+    </Button>
+    <Button {...args} appearance="tertiary">
+      Tertiary
+    </Button>
     <Button appearance="outline">Outline</Button>
     <Button appearance="primaryOutline">Outline primary</Button>
     <Button appearance="secondaryOutline">Outline secondary</Button>
@@ -73,8 +80,8 @@ export const AllButtons = (args) => (
     </Button>
   </div>
 );
-
-AllButtons.storyName = 'all buttons';
+export const AllButtons = Template.bind({});
+AllButtons.storyName = "all buttons";
 
 export const buttonWrapper = (args) => (
   <div>
@@ -106,7 +113,7 @@ export const buttonWrapper = (args) => (
       Primary
     </Button>
     <Button ButtonWrapper={ButtonWrapper} appearance="secondary" isLoading>
-      Secondary
+      Secondary...
     </Button>
     <Button ButtonWrapper={ButtonWrapper} appearance="tertiary" isLoading>
       Tertiary
@@ -127,7 +134,7 @@ export const buttonWrapper = (args) => (
       Primary
     </Button>
     <Button ButtonWrapper={ButtonWrapper} appearance="secondary" size="small">
-      Secondary
+      Secondary...
     </Button>
     <Button ButtonWrapper={ButtonWrapper} appearance="tertiary" size="small">
       Tertiary
@@ -158,7 +165,7 @@ export const buttonWrapper = (args) => (
   </div>
 );
 
-buttonWrapper.storyName = 'button wrapper';
+buttonWrapper.storyName = "button wrapper";
 
 export const AnchorWrapper = (args) => (
   <div>
@@ -321,4 +328,4 @@ export const AnchorWrapper = (args) => (
   </div>
 );
 
-AnchorWrapper.storyName = 'anchor wrapper';
+AnchorWrapper.storyName = "anchor wrapper";

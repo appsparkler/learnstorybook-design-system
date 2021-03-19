@@ -21,11 +21,11 @@ export const AllBadges = (args) => (
   </div>
 );
 
-(AllBadges.args = {
+AllBadges.args = {
   icon: "facehappy",
   inline: true,
-}),
-  (AllBadges.storyName = "all badges");
+};
+AllBadges.storyName = "all badges";
 
 export const Positive = (args) => <Badge status="positive">Positive</Badge>;
 export const Negative = (args) => <Badge status="negative">Negative</Badge>;
