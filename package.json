@@ -1,11 +1,11 @@
 {
-  "name": "learnstorybook-design-system",
+  "name": "@appsparkler/learn-storybook-design-systems",
   "version": "0.1.0",
   "private": false,
-  "description": "Learn Storybook design system",
+  "description": "Storybook design systems tutorial",
   "main": "dist/index.js",
-  "repository": "https://github.com/chromaui/learnstorybook-design-system.git",
-  "author": "Tom Coleman <tom@thesnail.org>",
+  "repository": "https://github.com/appsparkler/learnstorybook-design-system.git",
+  "author": "appsparkler@gmail.com",
   "license": "MIT",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
