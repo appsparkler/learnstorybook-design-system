@@ -21,6 +21,9 @@
     "react-scripts": "^4.0.3",
     "styled-components": "^5.2.3"
   },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
   "scripts": {
     "build": "cross-env BABEL_ENV=production babel src -d dist",
     "test": "react-scripts test",
