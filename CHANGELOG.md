@@ -1,3 +1,16 @@
+# v0.1.12 (Fri Apr 02 2021)
+
+#### ⚠️ Pushed to `main`
+
+- chore: --frozen-lockfile installation ([@appsparkler](https://github.com/appsparkler))
+- ci: setting up release action ([@appsparkler](https://github.com/appsparkler))
+
+#### Authors: 1
+
+- Akash ([@appsparkler](https://github.com/appsparkler))
+
+---
+
 # v0.1.1 (Fri Apr 02 2021)
 
 #### ⚠️ Pushed to `main`
