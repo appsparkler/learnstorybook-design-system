@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     # the list of steps that the action will go through
     steps:
-      - name: Use Node.js 12.x
+      - name: Use Node.js 15.x
         uses: actions/setup-node@v1
         with:
           node-version: 15.x
@@ -18,7 +18,7 @@ jobs:
           SKIP_PREFLIGHT_CHECK: true
       - uses: actions/checkout@v1
       - run: yarn
-      - run: yarn test
+      - run: cross-env SKIP_PREFLIGHT_CHECK=true yarn test
       - uses: chromaui/action@v1
         # options required to the GitHub chromatic action
         with:
