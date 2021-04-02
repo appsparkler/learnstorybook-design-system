@@ -1,6 +1,6 @@
 {
   "name": "@appsparkler/learn-storybook-design-systems",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "private": false,
   "description": "Storybook design systems tutorial",
   "main": "dist/index.js",
